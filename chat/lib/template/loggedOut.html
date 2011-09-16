@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="[CONTENT_ENCODING/]"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="[LANG_CODE/]" lang="[LANG_CODE/]" dir="[BASE_DIRECTION/]">
+
+<head>
+	<meta http-equiv="Content-Type" content="[CONTENT_TYPE/]" />
+	<title>[LANG]title[/LANG]</title>
+	<link ref="shortcut icon" href="http://shwecommunity.itbaybay.com/chat/img/shwe.gif"/>
+	<style type="text/css">
+	#loginContent h1 {font-family:"Trebuchet MS",Verdana,Arial,sans-serif; font-size:1.3em;font-weight:bold;}
+	#loginContent #loginFormContainer div {margin-bottom:7px;}
+	#loginContent #loginFormContainer {margin-left:100px;margin-right:100px;}
+	body {padding:0;margin: 0 50px 0 51px;}	
+	#loginContent {	opacity:0.6; filter:alpha(opacity=60);font-weight: bold;}
+	#loginContent #loginFormContainer #loginButton,#loginContent input {font-weight: bold;border: 2px solid black;-moz-border-radius: 5px;border-radius: 5px;cursor: pointer;}
+	#loginContent {font-family:Verdana,Arial,Helvetica,sans-serif;font-size:0.8em;}
+	#loginContent {height:330.5px;position:absolute;width:420px;}
+	#loginContent #loginHeadlineContainer {margin-left:100px;margin-right:100px;margin-top:100px;}
+	/*Replace style Colbolt for login page only from prosilver */
+	#loginContent {background-color: #F9F9F9 !important;color: #28313F !important;}
+	#loginContent h1 { color: #333333 !important;}
+	#loginContent input, #loginContent select { background-color: #FFFFFF !important; color: #333333 !important;}
+	#loginContent #loginFormContainer #loginButton { background-color: #FFFFFF !important; color: #333333 !important;}
+	#loginContent a {color: #333333 !important;}
+	#errorContainer{position:absolute; top:50px; padding:0 118px 0 100px;color:white;background:red;}
+	</style>
+	<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie5-6.css"/>
+	<![endif]-->
+	<script src="js/chat.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/lang/[LANG_CODE/].js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/config.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/javascript">
+		// <![CDATA[
+			function initializeLoginPage() {
+				document.getElementById('userNameField').focus();
+				if(!ajaxChat.isCookieEnabled()) {
+					var node = document.createElement('div');
+					var text = document.createTextNode(ajaxChatLang['errorCookiesRequired']);
+					node.appendChild(text);
+					document.getElementById('errorContainer').appendChild(node);
+				}
+			}
+			ajaxChatConfig.sessionName = '[SESSION_NAME/]';
+			ajaxChatConfig.cookieExpiration = parseInt('[COOKIE_EXPIRATION/]');
+			ajaxChatConfig.cookiePath = '[COOKIE_PATH/]';
+			ajaxChatConfig.cookieDomain = '[COOKIE_DOMAIN/]';
+			ajaxChatConfig.cookieSecure = '[COOKIE_SECURE/]';
+			ajaxChat.init(ajaxChatConfig, ajaxChatLang, true, true, false);
+		// ]]>
+	</script>
+</head>
+
+<body onload="initializeLoginPage();">
+<div style="padding: 0 35%;">
+<img width="420px" height="331px" src="/chat/img/couplepinkhd.jpg" style="position:absolute;z-index: -10; "/>
+<!-- /chat/img/shwe.jpg-->
+	<div id="loginContent">
+	        <div id="loginHeadlineContainer">
+			<h1>[LANG]title[/LANG]</h1>
+		</div>
+		<form id="loginForm" action="[LOGIN_URL/]" method="post" enctype="application/x-www-form-urlencoded">
+			<div id="loginFormContainer">
+				<input type="hidden" name="login" id="loginField" value="login"/>
+				<input type="hidden" name="redirect" id="redirectField" value="[REDIRECT_URL/]"/>
+				<div><label for="userNameField">[LANG]userName[/LANG]*:</label><br />
+				<input type="text" name="userName" id="userNameField" maxlength="[USER_NAME_MAX_LENGTH/]"/>
+                                </div>
+				<div><label for="passwordField">[LANG]password[/LANG]*:</label><br />
+				<input type="password" name="password" id="passwordField"/>
+                                
+				</div>
+				<div><input type="submit" name="submit" id="loginButton" value="[LANG]login[/LANG]"/></div>
+				<div> Not yet a member?<br/> <a href='/register'>Register now for free!</a></div>
+                                <a href='http://shwecommunity.forumbuild.com/viewforum.php?f=21' target="_blank">Report problem?</a>
+			</div>
+		</form>
+		<div id="errorContainer">[ERROR_MESSAGES/]<noscript><div>[LANG]requiresJavaScript[/LANG]</div></noscript></div>
+	</div>
+<div style="display: none">loggedOut</div>
+                <div id="copyright" style="position:absolute; right:0; bottom:0;font-size: 8px"><a href="https://blueimp.net/ajax/" target="_blank" >AJAX Chat</a> &copy; <a href="https://blueimp.net" target="_blank" >blueimp.net</a></div>
+
+</div>
+</body>
+
+</html>

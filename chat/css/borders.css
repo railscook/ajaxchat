@@ -1,0 +1,35 @@
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ */
+
+
+/*
+ * Borders
+ */
+#onlineListContainer h3, #onlineList{
+    -webkit-border-radius:10px;-moz-border-radius: 10px;border-radius:10px;
+}
+
+
+
+#content img {
+	border:none;
+}
+#content #helpContainer, #content #settingsContainer, #content #bbCodeContainer, #content #colorCodesContainer, #content #emoticonsContainer, #content #colorCodesContainer a {
+	border-width:1px;
+	border-style:solid;
+}
+
+#content #chatList, #content #onlineListContainer{}
+#content #chatList{ background: none !important;overflow-y: scroll;}
+#content #chatList .deleteSelected {
+	border-width:1px;
+	border-style:dotted;
+}
+#content #helpContainer #helpList table, #content #settingsContainer #settingsList table {
+	border-collapse:collapse;
+}

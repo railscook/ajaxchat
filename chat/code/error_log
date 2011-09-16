@@ -1,0 +1,14 @@
+[02-Dec-2010 15:48:56] PHP Parse error:  syntax error, unexpected '}' in /home/szwin/public_html/shwecommunity/chat/login/users.php on line 25
+[02-Dec-2010 15:49:32] PHP Fatal error:  Call to undefined function  doquery() in /home/szwin/public_html/shwecommunity/chat/login/users.php on line 10
+[02-Dec-2010 16:53:15] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/szwin/public_html/shwecommunity/chat/login/generate_users.php on line 45
+[02-Dec-2010 16:54:41] PHP Warning:  fclose(): 6 is not a valid stream resource in /home/szwin/public_html/shwecommunity/chat/login/generate_users.php on line 35
+[02-Dec-2010 16:56:52] PHP Warning:  fclose(): 6 is not a valid stream resource in /home/szwin/public_html/shwecommunity/chat/login/generate_users.php on line 35
+[02-Dec-2010 17:20:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'szwin'@'localhost' (using password: NO) in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 7
+[02-Dec-2010 17:20:38] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 7
+[02-Dec-2010 17:22:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: Access denied for user 'szwin'@'localhost' (using password: NO) in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 7
+[02-Dec-2010 17:22:11] PHP Warning:  mysql_query() [<a href='function.mysql-query'>function.mysql-query</a>]: A link to the server could not be established in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 7
+[02-Dec-2010 20:37:50] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 17
+[02-Dec-2010 20:39:10] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 17
+[02-Dec-2010 20:39:15] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 17
+[02-Dec-2010 20:39:19] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 17
+[02-Dec-2010 20:39:24] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/szwin/public_html/shwecommunity/chat/code/create_user.php on line 17

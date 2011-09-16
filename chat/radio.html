@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body style='background:black; text-align:center;' topmargin=0 leftmargin=0>
+<object class='radio' id="MediaPlayer1" width=180 height=40
+classid="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95"
+codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701"
+standby="Loading Microsoft® Windows® Media Player components..."
+type="application/x-oleobject" align="middle">
+<param name="FileName" value="http://109.169.47.158:8246"><param name="AutoStart" value="True">
+<param name="ShowStatusBar" value="True">
+<param name="DefaultFrame" value="mainFrame">
+
+<!-- BEGIN PLUG-IN HTML FOR FIREFOX-->
+<embed class='radio' type="application/x-mplayer2"
+pluginspage = "http://www.microsoft.com/Windows/MediaPlayer/"
+src="http://109.169.47.158:8246" align="middle"
+width=176
+height=40 
+defaultframe="rightFrame"
+showstatusbar=true>
+</embed>
+<!-- END PLUG-IN HTML FOR FIREFOX-->
+
+</object>
+<!-- END GENERIC ALL BROWSER FRIENDLY HTML FOR WINDOWS MEDIA PLAYER -->
+<script type="text/javascript">
+if(navigator.appName == 'Microsoft Internet Explorer'){
+	document.getElementById('MediaPlayer1').height = 50;
+ 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Login and password is blank [<a href="/chat/register.html"> Go Back to register </a>]

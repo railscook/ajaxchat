@@ -1,0 +1,570 @@
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ */
+
+/*
+ * Rounded
+ */
+#content #inputFieldContainer, #content textarea, #content input {
+   -webkit-border-radius:10px;-moz-border-radius: 10px;border-radius:10px;
+}
+
+#chatList .rowOdd {
+    -webkit-border-radius:10px;-moz-border-radius: 10px;border-radius:10px;
+    margin: 0 0 2px 2px;
+    min-height: 30px;
+    float:left;
+    min-width: 80% !important;
+}
+
+#chatList .rowEven {
+    -webkit-border-radius:10px;-moz-border-radius: 10px;border-radius:10px;
+    min-height: 30px;
+    float:left;
+    min-width: 80% !important;
+    margin: 0px 0 2px 2px;
+}
+
+/*
+ * Positioning
+ */
+
+#loginContent {
+	position:absolute;
+/*	width: 100%;
+        margin: 0 20%;
+	padding: 0 10%;*/
+	height: 331px;
+}
+#loginContent #loginHeadlineContainer {
+	margin-left:100px;
+	margin-right:100px;
+	margin-top:100px;
+}
+#loginContent #loginFormContainer {
+	margin-left:100px;
+	margin-right:100px;
+}
+#loginContent #loginFormContainer div {
+	margin-bottom:7px;
+}
+#loginContent #loginRegisteredUsers {
+    padding-top:5px;
+}
+#loginContent #errorContainer {
+	margin-left:100px;
+	margin-right:100px;
+}
+#loginContent #copyright {
+	margin-top:10px;
+	margin-left:100px;
+	margin-right:100px;
+	padding: 0 0 10px 0;
+}
+
+#content {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+#content #copyright {
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+#copyrightBottom{
+	position:absolute;
+	right:20px;
+	bottom:0;
+}
+#copyrightBottom a{
+	font-size:0.6em;
+}
+#content #headlineContainer {
+	position:absolute;
+	left:20px;
+	top:5px;
+}
+#content #logoutChannelContainer {
+	position:absolute;
+	left:20px;
+	top:50px;
+}
+#content #statusIconContainer {
+	display: none;
+	position:absolute;
+	right:20px;
+	top:50px;
+	width: 22px;
+	height: 22px;
+}
+#content #chatList {
+	position:absolute;
+	left:20px;
+	right:280px; /*chatList and onlineList width*/
+	top:85px;
+	bottom:115px;
+	overflow:auto;
+}
+#content #inputFieldContainer {
+	position:absolute;
+	left:20px;
+	right:20px;
+	bottom:60px;
+	padding-right:4px;
+}
+#content #submitButtonContainer {
+	position:absolute;
+	right:20px;
+	bottom:60px;
+}
+#content #onlineListContainer {
+	position:absolute;
+	right:20px;
+	top:85px;
+	width:250px;
+	bottom:115px;
+}
+#content #helpContainer {
+	position:absolute;
+	right:20px;
+	top:85px;
+	width:360px;
+	bottom:150px;
+}
+#content #settingsContainer {
+	position:absolute;
+	right:20px;
+	top:85px;
+	width:360px;
+	bottom:150px;
+}
+#content #bbCodeContainer {
+	position:absolute;
+	left:20px;
+	bottom:20px;
+	padding:3px;
+}
+#content #colorCodesContainer {
+	position:absolute;
+	left:20px;
+	bottom:55px;
+	padding:3px;
+	z-index:1;
+}
+#content #emoticonsContainer {
+	position:absolute;
+	left:20px;
+	bottom:57px;
+	padding:3px;
+}
+#content #optionsContainer {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	padding:3px;
+	padding-right:0px;
+}
+#content #bbCodeContainer input {
+	padding-left:4px;
+	padding-right:4px;
+}
+#content #colorCodesContainer a {
+	display:block;
+	float:left;
+	width:15px;
+	height:15px;
+}
+#content #optionsContainer input {
+    vertical-align:middle;
+}
+#content #optionsContainer input.button {
+    width:22px;
+	height:22px;
+}
+#content #emoticonsContainer a {
+	margin-left:1px;
+	margin-right:1px;
+}
+#content #emoticonsContainer img {
+	vertical-align:middle;
+	margin-bottom:2px;
+}
+#content #headlineContainer h1 {
+	margin-left:auto;
+	margin-top:12px;
+}
+#content #chatList div {
+	padding-left:10px;
+	padding-top:2px;
+	padding-right:10px;
+	padding-bottom:2px;
+}
+#content #chatList img {
+	vertical-align:middle;
+	margin-bottom:2px;
+}
+#content #chatList cite {
+	margin-right:5px;
+}
+#content #chatList .bbCodeImage {
+	vertical-align:top;
+	overflow:auto;
+	margin:5px;
+}
+#content #chatList .cornerImg, #logosideImg {
+	display:block;
+}
+
+
+#newsContainer {
+font-size:10px;position:absolute;right:60px;top:20px;width:400px;text-align:right;height:60px;line-height:1.8em;
+}
+
+#content #chatList .delete {
+	display:block;
+	float:right;
+	width:10px;
+	height:10px;
+	margin-top:2px;
+	padding-left:5px;
+}
+#content #inputFieldContainer #inputField {
+	width:100%;
+	height:40px;
+}
+#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
+	height:30px;
+	padding-left:10px;
+	padding-top:4px;
+	padding-right:10px;
+	padding-bottom:4px;
+	margin:0px;
+	text-align:center;
+}
+#content #onlineListContainer #onlineList, #content #helpContainer #helpList, #content #settingsContainer #settingsList {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:25px;
+	bottom:0px;
+	overflow:auto;
+}
+#content #onlineListContainer #onlineList div {
+	padding-left:10px;
+	padding-top:2px;
+	padding-right:10px;
+	padding-bottom:2px;
+}
+#content #onlineListContainer #onlineList a {
+	/*display:block;*/
+}
+#content #onlineListContainer #onlineList ul {
+	margin-left:0px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-left:20px;
+}
+#content #helpContainer #helpList td, #content #settingsContainer #settingsList td {
+	padding-left:10px;
+	padding-top:4px;
+	padding-right:10px;
+	padding-bottom:4px;
+	vertical-align:top;
+}
+#content #settingsContainer #settingsList td {
+	vertical-align:middle;
+}
+#content #settingsContainer #settingsList td.setting {
+	width:115px;
+}
+#content #settingsContainer #settingsList input.text {
+	width:100px;
+}
+#content #settingsContainer #settingsList select.left {
+	text-align:right;
+}
+#content #settingsContainer #settingsList input.button {
+    width:22px;
+	height:22px;
+	vertical-align:middle;
+	margin-bottom:2px;
+}
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ */
+
+
+/*
+ * Borders
+ */
+#onlineListContainer h3, #onlineList{
+    -webkit-border-radius:10px;-moz-border-radius: 10px;border-radius:10px;
+}
+
+
+
+#content img {
+	border:none;
+}
+#content #helpContainer, #content #settingsContainer, #content #bbCodeContainer, #content #colorCodesContainer, #content #emoticonsContainer, #content #colorCodesContainer a {
+	border-width:1px;
+	border-style:solid;
+}
+
+#content #chatList, #content #onlineListContainer{}
+#content #chatList{ background: none !important;overflow-y: scroll;}
+#content #chatList .deleteSelected {
+	border-width:1px;
+	border-style:dotted;
+}
+#content #helpContainer #helpList table, #content #settingsContainer #settingsList table {
+	border-collapse:collapse;
+}
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ */
+
+
+/*
+ * Fonts
+ */
+
+#loginContent {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+}
+#loginContent h1 {
+	font-size:1.3em;
+	font-family:"Trebuchet MS", Verdana, Arial, sans-serif;
+	font-weight:bold;
+}
+#loginContent a {
+	text-decoration:none;
+}
+#loginContent a:hover {
+	text-decoration:underline;
+}
+#loginContent #loginRegisteredUsers {
+    font-size:0.8em;
+}
+#loginContent #copyright {
+	font-size:0.8em;
+}
+
+#content {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+}
+#content h1 {
+	font-size:1.3em;
+	font-family:"Trebuchet MS", Verdana, Arial, sans-serif;
+	font-weight:bold;
+}
+#content h3 {
+	font-size:1.0em;
+}
+#content a , #copyrightBottom a{
+	text-decoration:none;
+}
+#content a:hover {
+	text-decoration:underline;
+}
+#content #copyright {
+	font-size:0.8em;
+}
+#content #chatList span.dateTime {
+	font-size:0.7em;
+}
+#content #chatList span.guest {
+	font-weight:bold;
+}
+#content #chatList span.user {
+	font-weight:bold;
+}
+#content #chatList span.moderator {
+	font-weight:bold;
+}
+#content #chatList span.admin {
+	font-weight:bold;
+}
+#content #chatList span.chatBot {
+	font-weight:bold;
+	font-style:italic;
+}
+#content #chatList .chatBotMessage {
+	font-style:italic;
+}
+#content #chatList .chatBotErrorMessage {
+	font-style:italic;
+}
+#content #chatList .privmsg {
+	font-style:italic;
+}
+#content #chatList .action {
+	font-style:italic;
+}
+#content #chatList q {
+	font-variant:small-caps;
+}
+#content #chatList code {
+    font-size:1.2em;
+}
+#content #onlineListContainer #onlineList div {
+	font-size:0.9em;
+}
+#content #helpContainer #helpList td {
+	font-size:0.9em;
+}
+#content #helpContainer #helpList td.code {
+	font-style:italic;
+}
+#content #settingsContainer #settingsList td {
+	font-size:0.9em;
+}
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ */
+
+
+/*
+ * Misc
+ */
+
+@media screen,projection,handheld {
+
+	#content #bbCodeContainer input, #content #optionsContainer input.button, #content #settingsContainer #settingsList input.button {
+		cursor:pointer;
+	}
+	
+}/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ */
+
+
+/*
+ * Print layout
+ */
+
+@media print {
+
+	#content {
+		position:static;
+	}
+	#content #copyright {
+		display:none;
+	}
+	#content #headlineContainer {
+		display:none;
+	}
+	#content #logoutChannelContainer {
+		display:none;
+	}
+	#content #statusIconContainer {
+		display:none;
+	}
+	#content #chatList {
+		position:static;
+		overflow:visible;
+	}
+	#content #inputFieldContainer {
+		display:none;
+	}
+	#content #submitButtonContainer {
+		display:none;
+	}
+	#content #onlineListContainer {
+		display:none;
+	}
+	#content #helpContainer {
+		display:none;
+	}
+	#content #settingsContainer {
+		display:none;
+	}
+	#content #bbCodeContainer {
+		display:none;
+	}
+	#content #colorCodesContainer {
+		display:none;
+	}
+	#content #emoticonsContainer {
+		display:none;
+	}
+	#content #optionsContainer {
+		display:none;
+	}
+	#content #chatList div {
+		padding-bottom:5px;
+	}
+	#content #chatList img {
+		vertical-align:middle;
+		margin-bottom:2px;
+	}
+	#content #chatList cite {
+		margin-right:5px;
+	}
+	#content #chatList .delete {
+	    display:none;
+	}
+	
+	#content #chatList {
+		border:none;
+	}
+	
+	#content {
+		font-family:'times new roman', times, serif;
+		font-size:1.0em;
+		text-align:justify;
+	}
+	#content #chatList code {
+		font-size:0.8em;
+	}
+	
+	#content {
+		color:#000;
+	}
+	#content .guest {
+		color:gray;
+	}
+	#content .user {
+		color:#000;
+	}
+	#content .moderator {
+		color:#00AA00;
+	}
+	#content .admin {
+		color:red;
+	}
+	#content .chatBot {
+		color:#FF6600;
+	}
+	#content #chatList .chatBotErrorMessage {
+		color:red;
+	}
+	#content #chatList a {
+		color:#1E90FF;
+	}
+
+}

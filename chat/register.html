@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="[CONTENT_ENCODING/]"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="[LANG_CODE/]" lang="[LANG_CODE/]" dir="[BASE_DIRECTION/]">
+
+<head>
+	<meta http-equiv="Content-Type" content="[CONTENT_TYPE/]" />
+	<title>Shwe Community Chat</title>
+	<style type="text/css">
+		body {
+			padding:0;
+			margin:0;
+		}
+		#loginContent  {
+			background-color:#F9F9F9;
+			color:#28313F;
+			font-family:Verdana,Arial,Helvetica,sans-serif;
+			font-size:0.8em;
+			height:100%;
+			margin:0 auto;
+			width:500px;
+		}
+
+	</style>
+	<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie5-6.css"/>
+	<![endif]-->
+	<script src="js/chat.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/config.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+
+<body onload="initializeLoginPage();">
+<!--               <center><img src="http://shwe-cybercafe.webs.com/photos/mail.google.com.jpg" width="700px" height="500px"/></center> -->
+	<div id="loginContent">
+	        <div id="loginHeadlineContainer">
+			<h1>Create a new account</h1>
+		</div>
+		<form id="registerForm" action="/chat/code/create_user.php" method="post" enctype="application/x-www-form-urlencoded">
+			<div id="loginFormContainer">
+			  <table>
+			    <tr>
+				<td><label for="userNameField">Username*:</label></td>
+				<td><input type="text" name="login" id="login" maxlength="10"/></td>
+			    </tr>
+			    <tr>
+				<td><label for="passwordField">Password*:</label></td>
+				<td><input type="password" name="password" id="password"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Full Name:</label></td>
+                                <td><input type="text" name="name" id="name" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Age:</label></td>
+                                <td><input type="text" name="age" id="age" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Location:</label></td>
+                                <td><input type="text" name="location" id="location" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Email:</label></td>
+                                <td><input type="text" name="email" id="email" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Website:</label></td>
+                                <td><input type="text" name="website" id="website" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">ICQ:</label></td>
+                                <td><input type="text" name="icq" id="icq" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Aim:</label></td>
+                                <td><input type="text" name="aim" id="aim" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Yim:</label></td>
+                                <td><input type="text" name="yim" id="yim" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">MSN Messenger:</label></td>
+                                <td><input type="text" name="msn_messenger" id="msn_messenger" maxlength="10"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="Field">Interests:</label></td>
+                                <td><textarea id="interests" name="interests" cols="27" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+				<td></td><td><input type="submit" name="submit" id="loginButton" value="Create!"/></td>
+                            </tr>
+			</table>
+			</div>
+		</form>
+         	<p align="right"><a href="/chat/"> Back </a></p>
+	</div>
+</body>
+
+</html>
